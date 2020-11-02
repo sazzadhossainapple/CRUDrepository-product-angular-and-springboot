@@ -1,0 +1,23 @@
+<p>viewproduct works!</p>
+<h2>Employee Details</h2> 
+
+<hr/>
+<div *ngIf="products">
+  <div>
+    <label><b>ID: </b></label> {{products.id}}
+  </div>
+  <div>
+    <label><b>Name: </b></label> {{products.name}}
+  </div>
+  <div>
+    <label><b>Description: </b></label> {{products.description}}
+    <div>
+        <label><b>Price: </b></label> {{products.price}}
+      </div>
+  </div>  
+</div>
+
+<br>
+<br>
+<button type="button" class="btn btn-primary"(click)="gotolist()" >Back</button>
+
